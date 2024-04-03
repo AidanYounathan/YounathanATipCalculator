@@ -10,4 +10,4 @@ This project is a replica of a tip calculator app, designed to calculate the tip
 
 ## Reviewer: Caleb Sylvia
 
-### Review:
+### Review: Everything looks good and functions how it should. Only issue is when on mobile the reset button looks sunken into the bottom of the screen so maybe adding some padding bottom to push the white box down should fix that issue. Other than that site looks great had no issues with inputs even with some crazy numbers. Great job!
