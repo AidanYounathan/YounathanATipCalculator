@@ -107,7 +107,7 @@ export default function Home() {
 
               <p className="text-[#5e7a7d]  mb-[12px] tracking-wider">Bill</p>
               <div className="relative ">
-                <input type="number" required ref={billRef} onChange={(e: any) => setBill(e.target.value)} onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()} className="focus:ring-[#26c0ab] border-none focus:ring-2  focus:outline-none text-[24px] placeholder-[#7f9c9f] text-[#00494d] border-gray-300 rounded-md py-2 px-4 pl-10 h-[48px] bg-[#f4fafa] w-full text-right" placeholder="0" />
+                <input type="number" inputMode="numeric" required ref={billRef} onChange={(e: any) => setBill(e.target.value)} onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()} className="focus:ring-[#26c0ab] border-none focus:ring-2  focus:outline-none text-[24px] placeholder-[#7f9c9f] text-[#00494d] border-gray-300 rounded-md py-2 px-4 pl-10 h-[48px] bg-[#f4fafa] w-full text-right" placeholder="0" />
                 <Image src={dollar} className="absolute left-3 top-4 w-3 h-4" alt="Dollar Sign" />
               </div>
             </div>
