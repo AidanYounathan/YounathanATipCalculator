@@ -53,15 +53,11 @@ export default function Home() {
     if (tipPercent && people && people > 0 && bill && bill > 0) {
 
       setBtnBg("bg-[#26c0ab]")
-      console.log(people, tipPercent, bill)
       let tipNum = Number(tipPercent)
       let billNum = Number(bill)
       let peopleNum = Number(people)
-
       let TotalBill: number = (billNum + (billNum * tipNum / 100)) / peopleNum
       let TotalTip: number = (billNum * tipNum / 100) / peopleNum
-      // console.log(String(MathTotal.toFixed(2)))
-      // console.log(String(MathTotalTip.toFixed(2)))
       setTotal(Number(TotalBill.toFixed(2)))
       setTotalTip(Number(TotalTip.toFixed(2)))
 
@@ -132,7 +128,7 @@ export default function Home() {
                 <p className=" text-red-300">{toggle == false ? "Can't be zero" : ""}</p>
               </div>
               <div className="relative">
-                <input type="number" title="Can't be zero" onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()} onChange={(e: any) => setPeople(e.target.value)} required ref={peopleRef} className={`border-none focus:ring-2  focus:outline-none text-[24px] placeholder-[#7f9c9f] text-[#00494d] border-gray-300 rounded-md py-2 px-4 pl-10 h-12 bg-[#f4fafa] w-full text-right ${btnFocus}`} placeholder="0" />
+                <input type="number" inputMode="numeric" title="Can't be zero" onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()} onChange={(e: any) => setPeople(e.target.value)} required ref={peopleRef} className={`border-none focus:ring-2  focus:outline-none text-[24px] placeholder-[#7f9c9f] text-[#00494d] border-gray-300 rounded-md py-2 px-4 pl-10 h-12 bg-[#f4fafa] w-full text-right ${btnFocus}`} placeholder="0" />
                 <Image src={person} className="absolute left-3 top-4 w-4 h-5 opacity-70" alt="People" />
               </div>
             </div>
