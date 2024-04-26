@@ -1,9 +1,9 @@
 'use client'
 import Image from "next/image";
-import logo from "../Assets/logo.svg"
+import logo from "../../public/Assets/logo.svg"
 import "./globals.css";
-import dollar from '../Assets/icon-dollar.svg'
-import person from '../Assets/icon-person.svg'
+import dollar from '../../public/Assets/icon-dollar.svg'
+import person from '../../public/Assets/icon-person.svg'
 import { useEffect, useRef, useState } from "react";
 import TipBtnComponent from "./Components/TipBtnComponent";
 
